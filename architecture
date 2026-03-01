@@ -1,1 +1,35 @@
 architecture
+
+
+             +------------------+
+             |   Students       |
+             | (School Login)   |
+             +--------+---------+
+                      |
+                      v
+             +------------------+
+             |   Google Sites   |  <-- Frontend / Portal Pages
+             |  (Dashboard,     |
+             |   Signup, Events,|
+             |   Announcements) |
+             +--------+---------+
+                      |
+      +---------------+----------------+
+      |                                |
+      v                                v
++-------------+                  +----------------+
+| Google Form |                  | Google Sheets  |
+| (Event      | --submits-->     | (Database:     |
+|  Signup)    |                  | Members, Events,|
++-------------+                  | Signups, Announcements)|
+                                 +--------+-------+
+                                          |
+                                          v
+                                 +----------------+
+                                 | Apps Script    |
+                                 | (Backend Logic)|
+                                 | - Confirmation |
+                                 |   Emails       |
+                                 | - Event Creation|
+                                 | - Admin Checks |
+                                 +----------------+
